@@ -11,7 +11,7 @@ dead_ends = 0
 for t in range(trials):
     a = [[False]* n for i in range(n)]
     x, y = n // 2, n // 2
-    # shorute barname
+    
     while 0 < x < n - 1 and 0 < y < n - 1 :
         if a[x - 1][y] and a[x + 1][y] and a[x][y + 1] and a[x][y - 1]:
             dead_ends += 1
